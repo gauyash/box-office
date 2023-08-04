@@ -1,0 +1,205 @@
+#search {
+  background-color: #d3d3d321;
+}
+
+nav {
+  width: 10rem;
+}
+
+.options {
+  width: 17rem;
+}
+nav > a,
+.options div {
+  width: 45%;
+  text-align: center;
+}
+
+/* Hide the default radio button appearance */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333; /* Border color for unchecked state */
+  border-radius: 50%; /* Makes the border circular */
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Style the radio button when it's checked */
+input[type="radio"]:checked {
+  background-color: #198754; /* Background color for checked state */
+  border-color: #198754; /* Border color for checked state */
+}
+
+/* Style the radio label */
+.radio-label {
+  margin-left: 8px; /* Add some space between the radio button and the label */
+  cursor: pointer;
+}
+
+.resultContainer {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.resultBox {
+  width: 70%;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 690px) {
+  .resultBox {
+    width: 47%;
+  }
+  .resultContainer {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 980px) {
+  .resultBox {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1380px) {
+  .resultBox {
+    width: 22%;
+  }
+}
+
+@media (min-width: 1480px) {
+  .resultBox {
+    width: 17%;
+  }
+}
+
+.starred-button {
+  background-color: transparent;
+  /* border: 1px solid #198754; */
+  border: 1px solid lightgray;
+}
+
+.starred-button ion-icon {
+  color: lightgray;
+}
+
+.active ion-icon {
+  color: #198754;
+}
+
+.read-more {
+  color: #198754;
+  text-decoration: none;
+}
+
+.image {
+  /* width: 15rem; */
+  height: 20rem;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.summary {
+  font-size: 0.9rem;
+}
+
+.poster {
+  width: 20rem;
+}
+
+.overviewContainer,
+.cast-row {
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .overviewContainer,
+  .cast-row {
+    flex-direction: row;
+  }
+
+  .overviewContainer {
+    gap: 2rem;
+  }
+
+  .overviewText {
+    width: 65%;
+  }
+  .cast-row {
+    flex-wrap: wrap;
+  }
+
+  .cast-col {
+    width: 40%;
+  }
+}
+
+.title span {
+  font-weight: lighter;
+}
+
+span {
+  font-weight: 400;
+}
+
+.title .rating {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.rating ion-icon {
+  color: #198754;
+  margin-right: 0.3rem;
+}
+
+.genres {
+  font-size: 0.8rem;
+}
+
+.back-button {
+  font-size: 2rem;
+  color: black;
+  padding: 1rem;
+}
+
+.mark-custom {
+  font-weight: lighter;
+}
+
+.cast-image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.season-info {
+  max-width: 65%;
+  width: 100%;
+}
+
+.season-details {
+  width: 30%;
+}
+.airing-details {
+  margin-left: 1rem;
+}
+
+.loading-indicator {
+  height: 50vh;
+}
+
+.loading-indicator img {
+  width: 10rem;
+  height: 10rem;
+}
