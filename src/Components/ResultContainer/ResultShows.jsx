@@ -27,7 +27,7 @@ export const ResultShows = ({ item, handleStar, star }) => {
         70
       )}...`}</p>
       <div className="d-flex gap-4 mt-3 align-items-center">
-        <Link className="read-more" to={`/show/${id}`}>
+        <Link className="read-more" to={`/box-office/show/${id}`}>
           Read More
         </Link>
         <button

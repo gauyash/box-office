@@ -39,17 +39,17 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainLayout />}>
+          <Route path="/box-office" element={<MainLayout />}>
             <Route
               index
               element={<Home star={star} handleStar={handleStar} />}
             />
             <Route
-              path="starred"
+              path="/box-office/starred"
               element={<Starred star={star} handleStar={handleStar} />}
             />
           </Route>
-          <Route path="/show/:id" element={<ShowsDetails />} />
+          <Route path="/box-office/show/:id" element={<ShowsDetails />} />
           <Route path="*" element={<h1>Page Not found</h1>} />
         </Routes>
       </BrowserRouter>

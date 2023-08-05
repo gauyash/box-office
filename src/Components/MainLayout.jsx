@@ -17,14 +17,15 @@ export const MainLayout = () => {
         <NavLink
           style={({ isActive }) => (isActive ? active : null)}
           className="text-decoration-none text-success "
-          to="/"
+          to="/box-office/"
+          end
         >
           Home
         </NavLink>
         <NavLink
           style={({ isActive }) => (isActive ? active : null)}
           className="text-decoration-none text-success"
-          to="/starred"
+          to="/box-office/starred"
         >
           Starred
         </NavLink>

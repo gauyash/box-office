@@ -65,7 +65,7 @@ export const ShowsDetails = () => {
 
   return (
     <div className="container-md d-flex flex-column gap-5">
-      <Link className="back-button" to="..">
+      <Link className="back-button" to="/box-office/">
         <ion-icon name="chevron-back-outline"></ion-icon>
       </Link>
       <div className="d-flex align-items-center overviewContainer">
