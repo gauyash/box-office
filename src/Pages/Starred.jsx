@@ -29,7 +29,7 @@ export const Starred = ({ star, handleStar }) => {
     return (
       <div className="loading-indicator d-flex align-items-center justify-content-center">
         <img
-          src="https://cdn.pixabay.com/animation/2022/07/29/03/42/03-42-11-849_512.gif"
+          src="/images/loading.webp"
           alt="Loading..."
         />
       </div>
@@ -54,7 +54,7 @@ export const Starred = ({ star, handleStar }) => {
             src={
               image
                 ? image.original
-                : "public/images/icon-image-not-found-free-vector.jpg"
+                : "/images/icon-image-not-found-free-vector.jpg"
             }
             className="rounded-4"
             alt=""

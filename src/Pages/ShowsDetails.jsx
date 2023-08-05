@@ -69,7 +69,7 @@ export const ShowsDetails = () => {
         <ion-icon name="chevron-back-outline"></ion-icon>
       </Link>
       <div className="d-flex align-items-center overviewContainer">
-        <img src={image.medium} alt="" className="poster rounded-5" />
+        <img src={image ? image.medium : "/images/icon-image-not-found-free-vector.jpg"} alt="" className="poster rounded-5" />
         <div className="overviewText pt-5 d-flex flex-column gap-3">
           <h1 className="title d-flex align-items-center gap-3">
             {name} <span>|</span>

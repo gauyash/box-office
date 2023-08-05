@@ -10,7 +10,7 @@ export const ResultActor = ({ item }) => {
           src={
             image
               ? image.original
-              : "public/images/icon-image-not-found-free-vector.jpg"
+              : "/images/icon-image-not-found-free-vector.jpg"
           }
           className="rounded-4"
           alt=""
